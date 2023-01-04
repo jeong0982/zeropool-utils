@@ -192,7 +192,7 @@ impl SectionType {
     }
 }
 
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, PartialEq, Eq, Clone, Copy)]
 pub struct FieldElement<const FS: usize>([u8; FS]);
 
 impl<const FS: usize> FieldElement<FS> {
